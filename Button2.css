@@ -1,0 +1,181 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Fonte moderna e legível */
+    color: #333;
+    background-color: purple; /* Cor de fundo roxa */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 20px; /* Adiciona um pequeno padding ao body */
+    display: flex; /* Usamos flexbox para centralizar o page-container */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    border: 1px solid purple; /* Adiciona uma borda fina roxa ao body */
+}
+
+.page-container {
+    position: relative;
+    width: 90%;
+    max-width: 960px;
+    background-color: white; /* Fundo branco para o conteúdo principal */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px;
+    /* Remove a margem automática que estava centralizando, pois o body agora faz isso */
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    font-size: 1.1em;
+    color: #eee;
+    margin-bottom: 0;
+}
+
+.header-blue-section { /* Nova classe para o texto azul */
+    color: #add8e6; /* Um tom de azul claro; você pode ajustar */
+}
+
+header .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+header .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white; /* Botões brancos */
+    color: #007bff; /* Cor do texto dos botões */
+    border: none; /* Remove a borda padrão dos botões */
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+header .button:focus {
+    box-shadow: 0 0 0 2px #007bff; /* Adiciona uma borda de foco personalizada se necessário */
+}
+
+header .button:hover {
+    background-color: #f0f8ff; /* Um tom mais claro de branco no hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+header p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #ddd;
+}
+
+#conteudo-control h2 {
+    color: #007bff;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5em;
+}
+
+#conteudo-control p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.video-container {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.video-container h2 {
+    color: #dc3545;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-description {
+    margin-top: 1.5em;
+    font-size: 0.95em;
+    color: #777;
+}
+
+#introducao-scratch {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#introducao-scratch h2 {
+    color: #28a745;
+    font-size: 2.2em;
+    margin-top: 0;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 0.6em;
+    margin-bottom: 1.2em;
+    text-align: center;
+}
+
+#introducao-scratch p {
+    margin-bottom: 1.5em;
+    font-size: 1.05em;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Importando a fonte Open Sans do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
